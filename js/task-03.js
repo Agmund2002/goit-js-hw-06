@@ -25,3 +25,14 @@ const listElem = images.map(item => {
 }).join('');
 
 list.insertAdjacentHTML("beforeend", listElem);
+
+list.style.listStyle = 'none';
+list.style.display = 'flex';
+list.style.gap = '40px';
+list.style.flexWrap = 'wrap';
+
+const listItem = document.querySelectorAll('.gallery-item');
+
+listItem.forEach(item => {
+  item.style.display = 'flex';
+});
