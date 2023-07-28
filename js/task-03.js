@@ -14,11 +14,11 @@ const images = [
 ];
 
 
-const list = document.querySelector('.gallery');
+const list = document.querySelector('.js-gallery');
 
 const listElem = images.map(item => {
   return `
-  <li class="gallery-item">
+  <li class="js-gallery-item">
   <img src=${item.url} alt=${item.alt} width=400>
   </li>
   `
@@ -31,7 +31,7 @@ list.style.display = 'flex';
 list.style.gap = '40px';
 list.style.flexWrap = 'wrap';
 
-const listItem = document.querySelectorAll('.gallery-item');
+const listItem = document.querySelectorAll('.js-gallery-item');
 
 listItem.forEach(item => {
   item.style.display = 'flex';
